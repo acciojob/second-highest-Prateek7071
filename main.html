@@ -15,7 +15,7 @@
 			}else if(setN.size === 1){
 				console.log("-Infinity")
 			}else{
-			const arr2 = arr.sort();
+			const arr2 = arr.sort((a,b)=>a-b);
 			const g = new Set(arr2);
 			const gg = [...g]
 			console.log(gg[gg.length -2])
