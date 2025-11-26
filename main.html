@@ -11,9 +11,9 @@
 		function secondHighest(arr) {
 			const setN = new Set(arr)
 			if(arr.length <=1){
-				console.log("-Infinity");
+				return "-Infinity"
 			}else if(setN.size === 1){
-				console.log("-Infinity")
+				return "-Infinity"
 			}else{
 			const arr2 = arr.sort((a,b)=>b-a);
 			const g = new Set(arr2);
