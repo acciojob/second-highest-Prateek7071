@@ -9,17 +9,25 @@
 <body>	
 	<script>
 		function secondHighest(arr) {
-			//Write your code here
-			
+			const setN = new Set(arr)
+			if(arr.length <=1){
+				console.log("-Infinity");
+			}else if(setN.size === 1){
+				console.log("-Infinity")
+			}else{
+			const arr2 = arr.sort();
+			const g = new Set(arr2);
+			console.log(g[2]);
+			}
 		}
 
 		function Main() {
-			var n = prompt("Enter the number of elements");
+			//var n = prompt("Enter the number of elements");
 			var arr = [];
 			for (var i = 0; i < n; i++) {
-				arr[i] = prompt("Enter element " + (i+1));
+				//arr[i] = prompt("Enter element " + (i+1));
 			}
-			alert(secondHighest(arr));
+			//alert(secondHighest(arr));
 		}
 		Main();
 	</script>
